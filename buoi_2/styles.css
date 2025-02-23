@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 980px;
+    width: 100%;
+    /* text-align: center; */
+}
+
+.facebook-logo {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.logo {
+    height: 106px;
+}
+
+.signup-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 432px;
+    margin: 0 auto;
+}
+
+.signup-box h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.signup-box .subtitle {
+    color: #606770;
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c0c0c0;
+    margin-bottom: 20px;
+}
+
+.signup-box p {
+    color: #606770;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    /* margin-bottom: 10px; */
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #606770;
+}
+
+input[type="text"], input[type="password"], select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.radio-group {
+    margin: 15px 0;
+}
+
+.radio-group > label, .date-label {
+    font-size: 14px;
+    color: #606770;
+    padding-bottom:8px;
+    display: block;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.gender-option {
+    flex:1;
+    border: 1px solid #bbbbbb;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.gender-option label{
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #00a400;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #008c00;
+}
+
+.privacy-note, .sms-note {
+    font-size: 11px !important;
+    color: #606770;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.login-link {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.login-link a {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.info-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #606770;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.info-icon:hover {
+    background-color: #454f5b; /* Darker shade on hover */
+}
+
+@media (max-width: 768px) {
+    .input-group {
+        flex-direction: column;
+    }
+    
+    /* input, select {
+        width: 100%;
+    } */
+
+    .radio-group > label, .date-label {
+        margin-bottom: 0;
+    }
+    
+    .gender-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .gender-option{
+        width: 100%;
+    }
+    
+    .signup-box {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .facebook-logo {
+        margin-bottom: 15px;
+    }
+    
+    .logo {
+        height: 80px;
+    }
+    
+    .signup-box {
+        padding: 15px;
+    }
+    
+    .signup-box h2 {
+        font-size: 24px;
+    }
+}

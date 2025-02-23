@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook - Sign Up</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="facebook-logo">
+        <img
+          src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg"
+          alt="Facebook Logo"
+          class="logo"
+        />
+      </div>
+
+      <div class="signup-box">
+        <h2>Create a new account</h2>
+        <p class="subtitle">It's quick and easy.</p>
+
+        <form>
+          <div class="input-group">
+            <input type="text" placeholder="First name" required />
+            <input type="text" placeholder="Surname" required />
+          </div>
+
+          <label class="date-label"
+            >Date of Birth<span
+              class="info-icon"
+              data-tooltip="Please enter your date of birth to verify your age. You must be at least 13 years old to use Facebook."
+              >?</span
+            ></label
+          >
+          <div class="input-group">
+            <select required>
+              <option value="">Day</option>
+              <!-- Add days from 1 to 31 -->
+              <script>
+                for (let i = 1; i <= 31; i++) {
+                  document.write(`<option value="${i}">${i}</option>`);
+                }
+              </script>
+            </select>
+            <select required>
+              <option value="">Month</option>
+              <option value="1">Jan</option>
+              <option value="2">Feb</option>
+              <option value="3">Mar</option>
+              <option value="4">Apr</option>
+              <option value="5">May</option>
+              <option value="6">Jun</option>
+              <option value="7">Jul</option>
+              <option value="8">Aug</option>
+              <option value="9">Sep</option>
+              <option value="10">Oct</option>
+              <option value="11">Nov</option>
+              <option value="12">Dec</option>
+            </select>
+            <select required>
+              <option value="">Year</option>
+              <!-- Add years from 1905 to current year (2025) -->
+              <script>
+                const currentYear = new Date().getFullYear();
+                for (let i = currentYear; i >= 1905; i--) {
+                  document.write(`<option value="${i}">${i}</option>`);
+                }
+              </script>
+            </select>
+          </div>
+
+          <div class="radio-group">
+            <label
+              >Gender
+              <span
+                class="info-icon"
+                data-tooltip="Select your gender. You can choose Female, Male, or Custom."
+                >?</span
+              >
+            </label>
+            <div class="gender-group">
+              <div class="gender-option">
+                <label>
+                  Female
+                  <input type="radio" name="gender" value="female" required />
+                </label>
+              </div>
+              <div class="gender-option">
+                <label>
+                  Male
+                  <input type="radio" name="gender" value="male" />
+                </label>
+              </div>
+              <div class="gender-option">
+                <label>
+                  Custom
+                  <input type="radio" name="gender" value="custom" />
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <input
+            type="text"
+            placeholder="Mobile number or email address"
+            required
+          />
+          <input type="password" placeholder="New password" required />
+
+          <p class="privacy-note">
+            People who use our service may have uploaded your contact
+            information to Facebook.
+            <a href="#">Learn more.</a>
+          </p>
+
+          <p class="sms-note">
+            By clicking Sign Up, you agree to our Terms, Privacy Policy and
+            Cookies Policy. You may receive SMS notifications from us and can
+            opt out at any time.
+          </p>
+
+          <button type="submit">Sign Up</button>
+
+          <p class="login-link"><a href="#">Already have an account? </a></p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
