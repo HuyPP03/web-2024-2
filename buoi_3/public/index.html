@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - Phan Phú Huy</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="layout-1">
+    <button class="layout-btn left-btn" onclick="changeLayout('layout-1')">
+      Layout 1
+    </button>
+    <button class="layout-btn right-btn" onclick="changeLayout('layout-2')">
+      Layout 2
+    </button>
+
+    <div class="container">
+      <div class="profile-header">
+        <img
+          src="images/profile.jpg"
+          alt="Profile Picture"
+          class="profile-img"
+        />
+        <h1>Phan Phú Huy</h1>
+        <h3>MSSV: 20215397</h3>
+      </div>
+
+      <section class="intro">
+        <h2>Giới thiệu</h2>
+        <p>
+          Tôi là một sinh viên đam mê công nghệ, luôn học hỏi và phát triển kỹ
+          năng lập trình để giải quyết các vấn đề thực tế.
+        </p>
+      </section>
+
+      <section class="education">
+        <h2>Học vấn</h2>
+        <p>Trường học hiện tại: Đại học Bách khoa Hà Nội</p>
+        <p>CPA: <span id="randomCPA"></span></p>
+      </section>
+
+      <section class="skills">
+        <h2>Kỹ năng</h2>
+        <ul>
+          <li>
+            Kĩ sư phần mềm: sử dụng nodejs, reactjs, vuejs, django, javaspring
+          </li>
+          <li>Giải quyết vấn đề</li>
+          <li>Làm việc nhóm</li>
+          <li>Quản lý thời gian</li>
+          <li>Thiết kế giao diện</li>
+        </ul>
+      </section>
+
+      <section class="languages">
+        <h2>Ngôn ngữ lập trình</h2>
+        <ul>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>C++</li>
+        </ul>
+      </section>
+
+      <section class="projects">
+        <h2>Dự án đã thực hiện</h2>
+        <div class="project">
+          <h3>Ứng dụng quản lý thư viện</h3>
+          <p>
+            <strong>Giới thiệu:</strong> Một ứng dụng web giúp quản lý sách và
+            mượn trả trong thư viện.
+          </p>
+          <p>
+            <strong>Nhiệm vụ:</strong> Thiết kế giao diện và phát triển backend.
+          </p>
+          <p>
+            <strong>Công nghệ:</strong> HTML, CSS, JavaScript, Node.js, MongoDB.
+          </p>
+        </div>
+        <div class="project">
+          <h3>Game Flappy Bird Clone</h3>
+          <p>
+            <strong>Giới thiệu:</strong> Bản sao của game Flappy Bird sử dụng
+            canvas HTML5.
+          </p>
+          <p>
+            <strong>Nhiệm vụ:</strong> Lập trình logic game và xử lý va chạm.
+          </p>
+          <p><strong>Công nghệ:</strong> HTML5, JavaScript.</p>
+        </div>
+        <div class="project">
+          <h3>Hệ thống bán hàng online</h3>
+          <p>
+            <strong>Giới thiệu:</strong> Website thương mại điện tử đơn giản cho
+            cửa hàng tạp hóa.
+          </p>
+          <p>
+            <strong>Nhiệm vụ:</strong> Xây dựng cơ sở dữ liệu và tích hợp thanh
+            toán.
+          </p>
+          <p><strong>Công nghệ:</strong> PHP, MySQL, Bootstrap.</p>
+        </div>
+        <div class="project">
+          <h3>Ứng dụng ghi chú</h3>
+          <p><strong>Giới thiệu:</strong> Ứng dụng di động để ghi chú nhanh.</p>
+          <p>
+            <strong>Nhiệm vụ:</strong> Phát triển ứng dụng và đồng bộ dữ liệu.
+          </p>
+          <p><strong>Công nghệ:</strong> Java, Android Studio, Firebase.</p>
+        </div>
+      </section>
+
+      <section class="awards">
+        <h2>Giải thưởng</h2>
+        <ul>
+          <li>Giải Nhì cuộc thi lập trình sinh viên 2023</li>
+          <li>Chứng chỉ xuất sắc khóa học Python Coursera</li>
+        </ul>
+      </section>
+
+      <section class="additional">
+        <h2>Thông tin khác</h2>
+        <p>Sở thích: Đọc sách, chơi cờ vua, chạy bộ.</p>
+        <p>Liên hệ: phanphuhuy@example.com</p>
+      </section>
+
+      <div class="visit-counter">
+        Số lần truy cập: <span id="visitCount">0</span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
